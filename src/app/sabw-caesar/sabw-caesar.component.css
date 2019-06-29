@@ -1,14 +1,16 @@
 #scheibe{
   width: 400px;
   position: absolute;
-  border:1px dotted olive;
+  
 }
 #scheibeklein{
   width: 400px;
   position: absolute;
   transform: rotate(-41.5deg);
-  border:1px solid blueviolet;
+  
 }
 #container{
-  height:400px
+  width:400px;
+  height:400px;
+  border:10px dotted hotpink;
 }
