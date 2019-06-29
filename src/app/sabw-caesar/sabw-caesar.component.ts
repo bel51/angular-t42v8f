@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SabwCaesarComponent implements OnInit {
   zahl=12;
+  deheScheibe(){
+    
+  }
   constructor() { }
 
   ngOnInit() {
