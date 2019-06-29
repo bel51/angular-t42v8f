@@ -1,0 +1,11 @@
+#scheibe{
+  width: 400px;
+  position: absolute;
+}
+#scheibeklein{
+  width: 400px;
+  position: absolute;
+}
+#container{
+  height:400px
+}
