@@ -9,7 +9,7 @@ export class SabwCaesarComponent implements OnInit {
   zahl=12;
   rotation='rotate(-41.5deg)';
   dreheScheibe(){
-    console.log(this.zahl);
+   this.rotation='rotate(180deg)';
   }
   constructor() { }
 
