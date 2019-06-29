@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SabwCaesarComponent implements OnInit {
   zahl=12;
+  rotation='rotate(-41.5deg)';
   dreheScheibe(){
     console.log(this.zahl);
   }
