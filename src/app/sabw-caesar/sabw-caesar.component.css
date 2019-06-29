@@ -6,7 +6,7 @@
 #scheibeklein{
   width: 400px;
   position: absolute;
-  transform: rotate(-41.5deg);
+  /*transform: rotate(-41.5deg);*/
   
 }
 #container{
