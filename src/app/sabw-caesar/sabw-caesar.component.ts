@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class SabwCaesarComponent implements OnInit {
   zahl=12;
   dreheScheibe(){
-    console.log("hallo");
+    console.log(this.zahl);
   }
   constructor() { }
 
