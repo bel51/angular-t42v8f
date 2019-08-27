@@ -7,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FermatTestComponent implements OnInit {
 
+  versuchskaninchen: number = 13;
+  anzahl: number = 555;
+  ergebnis = "Loading...";
+
   constructor() { }
 
   ngOnInit() {
