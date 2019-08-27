@@ -14,6 +14,7 @@ export class FermatTestComponent implements OnInit {
   constructor() { }
 
   fermattest() {
+    
     let zeuge = 2;
     //Berechne zeuge^(versuchskaninchen-1) modulo versuchskaninchen
     let zwischenergebnis = 1;
