@@ -8,10 +8,26 @@ import { Component, OnInit } from '@angular/core';
 export class FermatTestComponent implements OnInit {
 
   versuchskaninchen: number = 13;
-  anzahl: number = 555;
+  anzahl: number = 5;
   ergebnis = "Loading...";
 
   constructor() { }
+
+  fermattest() {
+    let zeuge = 2;
+    //Berechne zeuge^(versuchskaninchen-1) modulo versuchskaninchen
+    let zwischenergebnis = 1;
+    for( let i = 0; i < this.versuchskaninchen-1; i++){
+      zwischenergebnis = zwischenergebnis * zeuge;
+    }
+    zwischenergebnis = zwischenergebnis % this.versuchskaninchen;
+    if (zwischenergebnis === 1){
+    this.ergebnis = "Zeuge " + zeuge + "OK...";
+    }
+    else{
+    this.ergebnis = "Zeuge " + zeuge + "NICHT OK!"
+    }
+  }
 
   ngOnInit() {
   }
