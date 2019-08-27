@@ -15,3 +15,12 @@
   height:400px;
   border:10px dotted hotpink;
 }
+h1{
+  width: 200px;
+  transform: rotate(180deg);
+  color: hotpink;
+}
+#lol{
+  border: 10px dotted hotpink;
+  width: 100px;
+}
