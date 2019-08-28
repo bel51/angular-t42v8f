@@ -15,6 +15,9 @@ export class FermatTestComponent implements OnInit {
 
   fermattest() {
     this.ergebnis = "Starte Fermat-Test der Zahl " + this.versuchskaninchen + "... ";
+    
+    let endergebnis = true;
+
     for(let zeuge = 2; zeuge < this.anzahl+2 ;zeuge++){
 
    
@@ -29,7 +32,9 @@ export class FermatTestComponent implements OnInit {
     }
     else{
     this.ergebnis += "Zeuge " + zeuge + " NICHT OK!"
-    }
+    endergebnis = false;
+      }
+  
     }
   }
 
