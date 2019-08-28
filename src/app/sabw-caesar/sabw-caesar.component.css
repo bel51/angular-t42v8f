@@ -24,3 +24,7 @@ h1{
   border: 10px dotted hotpink;
   width: 100px;
 }
+body{
+  background-color: pink;
+  font-family: Harlow solid;
+}
