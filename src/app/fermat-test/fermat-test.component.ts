@@ -18,30 +18,31 @@ export class FermatTestComponent implements OnInit {
     
     let endergebnis = true;
 
-    for(let zeuge = 2; zeuge < this.anzahl+2 ;zeuge++){
+    for(let zeuge = 1; zeuge < this.anzahl+1 ;zeuge++){
 
    
-    //Berechne zeuge^(versuchskaninchen-1) modulo versuchskaninchen
-    let zwischenergebnis = 1;
-    for( let i = 0; i < this.versuchskaninchen-1; i++){
-      zwischenergebnis = zwischenergebnis * zeuge;
-    }
-    zwischenergebnis = zwischenergebnis % this.versuchskaninchen;
-    if (zwischenergebnis === 1){
-    this.ergebnis += "Zeuge " + zeuge + " OK...";
-    }
-    else{
-    this.ergebnis += "Zeuge " + zeuge + " NICHT OK!"
-    endergebnis = false;
+     //Berechne zeuge^(versuchskaninchen-1) modulo versuchskaninchen
+     let zwischenergebnis = 1;
+       for( let i = 0; i < this.versuchskaninchen-1; i++){
+       zwischenergebnis = zwischenergebnis * zeuge;
+       zwischenergebnis = zwischenergebnis % this.versuchskaninchen;
+     }
+     
+     if (zwischenergebnis === 1){
+       this.ergebnis += "Zeuge " + zeuge + " OK...";
+     }
+     else{
+       this.ergebnis += "Zeuge " + zeuge + " NICHT OK!"
+       endergebnis = false;
+       break;
       }
   
     }
     if (endergebnis === true){
-      this.ergebnis += "Test bestanden!:)";
-    
+     this.ergebnis += "Test bestanden!:)";
     }
     else{
-    this.ergebnis += "Test nicht bestanden :(";
+      this.ergebnis += "Test nicht bestanden :(";
     }
   
   }
