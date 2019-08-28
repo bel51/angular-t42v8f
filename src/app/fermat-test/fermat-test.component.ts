@@ -36,6 +36,14 @@ export class FermatTestComponent implements OnInit {
       }
   
     }
+    if (endergebnis === true){
+      this.ergebnis += "Test bestanden!:)";
+    
+    }
+    else{
+    this.ergebnis += "Test nicht bestanden :(";
+    }
+  
   }
 
   ngOnInit() {
